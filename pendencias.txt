@@ -1,0 +1,22 @@
+classe paciente e acompanhante
+
+paciente:
+id                           PK
+registro
+nome
+cpf
+rg
+unidade
+Leito
+acompanhante (nome)          Fk
+acompanhante (telefone)      FK
+acompanhante (saidas)        Fk
+
+acompanhante:
+nome
+cpf
+endereço
+telefone
+saidas
+
+implementação do CRUD para as classes

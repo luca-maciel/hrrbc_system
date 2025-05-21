@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+        <title>Home</title>
+    {% endblock %}
+</head>
+<body>
+
+    {% block content %}
+    
+<header>
+    <div class="logo">LOGO</div>
+    <div class="nav-buttons">
+      <button onclick="home()">Home</button>
+      <button onclick="pacientesAtivos()">Pacientes ativos</button>
+      <button>Exportar Planilha</button>
+    </div>
+  </header>
+  
+  <div class="content">
+    <img src="{% static 'imgs/background_image.svg' %}" alt="Ilustração" class="illustration">
+  </div>
+    {% endblock %}
+</body>
+</html>
